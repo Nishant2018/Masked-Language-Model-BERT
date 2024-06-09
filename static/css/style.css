@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+/* Your existing CSS */
+
+.image-container {
+    position: fixed;
+    bottom: 200px;
+    left: 45px;
+}
+.image-container-2 {
+    position: fixed;
+    bottom: 13px;
+    left: 30px;
+}
+.bert-image {
+    max-width: 220px; /* Adjust the width as needed */
+}
+.graph-image {
+    max-width: 280px; /* Adjust the width as needed */
+}
+.github-kaggle-box {
+    position: fixed;
+    top: 36%;
+    right: 50px;
+    transform: translateY(-50%);
+    padding: 25px;
+    background-color: #fff;
+    border: 2px solid #6f42c1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.github-kaggle-box p {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.github-kaggle-box a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.github-kaggle-box a:hover {
+    color: #d32f2f;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    position: relative;
+}
+
+.header {
+    color: black;
+    border: 2px solid #6f42c1;
+    background-color: #f3e8ff;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 200%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+.training-score {
+    position: absolute;
+    top: 1px;
+    left: -335px;
+    background-color: #fff;
+    padding: 25px;
+    border: 2px solid #6f42c1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.training-score h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #6f42c1;
+    font-weight: bold; 
+}
+
+
+.training-score table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.training-score table, .training-score td {
+    border: none;
+}
+
+.training-score td {
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold; /* Added to make the text bold */
+}
+
+
+.info-section, .example-section {
+    background-color: #e7f3fe;
+    border-left: 6px solid #2196F3;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.info-section h2, .example-section h2 {
+    margin-top: 0;
+}
+
+.example-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: 18px;
+    color: #333;
+}
+
+form textarea {
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.link-section-container {
+    position: fixed;
+    bottom: 20px;
+    right: 3px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #6f42c1;
+    max-width: 300px;
+    width: calc(100% - 40px);
+}
+
+.link-section-container .header {
+    margin-bottom: 10px;
+}
+
+.link-section h2 {
+    font-size: 20px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.link-section a {
+    display: block;
+    font-size: 18px;
+    color: #1a73e8;
+    text-decoration: none;
+    margin-bottom: 5px;
+    transition: color 0.3s;
+}
+
+.link-section a:hover {
+    color: #d32f2f;
+}
+.result {
+    position: absolute;
+    top: 1px;
+    right: -330px;
+    background-color: #d6f8d7;
+    border-left: 6px solid #21f364;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+.background {
+    background-image: url('./background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+}
+
+.link-section {
+    margin-bottom: 20px;
+}
+
+.link-section h2 {
+    font-size: 20px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.link-section a {
+    display: block;
+    font-size: 18px;
+    color: #1a73e8;
+    text-decoration: none;
+    margin-bottom: 5px;
+    transition: color 0.3s;
+}
+
+.link-section a:hover {
+    color: #d32f2f;
+}

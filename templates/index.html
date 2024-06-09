@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BERT Prediction</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">🤖 Masked Language Model (BERT - MLM - NLP) 🤖</div>
+
+        <div class="training-score">
+            <h3><strong>Training Score</strong> </h3>
+            <table>
+                <tr>
+                    <td>Average Cosine Similarity:</td>
+                    <td>1.0000</td>
+                </tr>
+                <tr>
+                    <td>Average Jaccard Similarity:</td>
+                    <td>1.0000</td>
+                </tr>
+                <tr>
+                    <td>Average Edit Distance:</td>
+                    <td>0.0000</td>
+                </tr>
+                <tr>
+                    <td>Precision:</td>
+                    <td>93.23 %</td>
+                </tr>
+            </table>
+        </div>
+        <div class="image-container-2">
+            <img src="../static/Graph.jpg" alt="Graph" class="graph-image">
+        </div> 
+        <div class="image-container">
+            <img src="../static/Architecute.jpg" alt="BERT Architecture" class="bert-image">
+        </div>         
+
+        <div class="info-section">
+            <h2>What is Masked Language Model (MLM)?</h2>
+            <p>The Masked Language Model (MLM) is a training objective used in the BERT model. It involves randomly masking some tokens in a sequence and then predicting those masked tokens. This helps the model understand the context of a word based on its surrounding words, leading to better language understanding.</p>
+        </div>
+        
+        <div class="example-section">
+            <h2>Input Format</h2>
+            <p>Please provide the input text with the [MASK] token where you want the prediction. For example:</p>
+            <div class="example-box">
+                <p>The movie was [MASK] interesting.</p>
+            </div>
+        </div>
+        
+        <form action="/predict" method="post">
+            <label for="input_text">Enter text:</label><br>
+            <textarea id="input_text" name="input_text" rows="4" cols="70">{{ input_text if input_text else '' }}</textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        
+        {% if prediction %}
+            <div class="result">
+                <h2>Prediction:</h2>
+                <p>{{ prediction }}</p>
+            </div>
+        {% endif %}
+    </div>
+    <div class="github-kaggle-box">
+        <p>GitHub: <a href="https://github.com/Nishant2018" target="_blank">Nishant2018</a></p>
+        <p>Kaggle: <a href="https://www.kaggle.com/endofnight17j03" target="_blank">endofnight17j03</a></p>
+    </div>
+    
+    <div class="link-section-container">
+        <div class="header">Related Works</div>
+        <div class="link-section">
+            <h2>Text Generation Using GPT-2</h2>
+            <a href="https://www.kaggle.com/code/endofnight17j03/textgeneration-transformers-gpt-2" target="_blank">Text Generation</a>
+        </div>
+        
+        <div class="link-section">
+            <h2>Text Mask Generation BERT Model</h2>
+            <a href="https://www.kaggle.com/code/endofnight17j03/text-mask-generation-googlebert-llm" target="_blank">Text Mask Generation</a>
+        </div>
+        
+        <div class="link-section">
+            <h2>Sentiment Analysis</h2>
+            <a href="https://www.kaggle.com/code/endofnight17j03/imdb-movies-nlp-sentiment-analysis" target="_blank">Sentiment Analysis</a>
+        </div>
+    </div>
+</body>
+</html>
