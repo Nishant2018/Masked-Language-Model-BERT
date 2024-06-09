@@ -4,6 +4,8 @@
 
 🤖 This project demonstrates the use of a Masked Language Model (MLM) with BERT for predicting masked tokens in a given text. The model is trained to understand the context of words based on their surrounding words, leading to better language understanding.
 
+![BERT Architecture](Demo Pics.jpg)
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
