@@ -1,6 +1,11 @@
----
+To include an image just below the heading, you can use the following markdown syntax for images. Make sure the image is accessible from the repository. For this example, let's assume the image is named `bert-mlm.png` and is located in the root directory of your project. 
 
+Here's the updated `README.md` with the image included:
+
+```markdown
 # Masked Language Model (BERT - MLM - NLP)
+
+![BERT Architecture]([bert-mlm.png](https://github.com/Nishant2018/Masked-Language-Model-BERT/blob/main/Demo%20Pics.jpg))
 
 🤖 This project demonstrates the use of a Masked Language Model (MLM) with BERT for predicting masked tokens in a given text. The model is trained to understand the context of words based on their surrounding words, leading to better language understanding.
 
@@ -36,7 +41,7 @@ The Masked Language Model (MLM) is a training objective used in the BERT model. 
 1. Clone the repository:
     ```bash
     git clone https://github.com/Nishant2018/Masked-Language-Model-BERT.git
-    cd bert-mlm-nlp
+    cd Masked-Language-Model-BERT
     ```
 
 2. Create and activate a virtual environment (optional but recommended):
@@ -51,10 +56,8 @@ The Masked Language Model (MLM) is a training objective used in the BERT model. 
     ```
 
 ### Running the App
-1. Start the Flask web application:
-   ```bash
-    Before starting the flask app verify the BERT Model path. Before using the model extract from zip then pass that path in your flask code.
-    ```
+1. Verify the BERT Model path. Extract the model from the zip file and update the path in your Flask code.
+
 2. Start the Flask web application:
     ```bash
     export FLASK_APP=app.py
@@ -68,7 +71,7 @@ The Masked Language Model (MLM) is a training objective used in the BERT model. 
     flask run
     ```
 
-2. Open your web browser and navigate to `http://127.0.0.1:5000`.
+3. Open your web browser and navigate to `http://127.0.0.1:5000`.
 
 ## Usage
 1. Enter a sentence with `[MASK]` tokens where you want the prediction.
@@ -100,5 +103,4 @@ The [MASK] sky was filled with [MASK] as the [MASK] festival began. Children ran
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
+```
